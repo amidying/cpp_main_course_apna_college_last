@@ -1,0 +1,1 @@
+{"name":"Local: 129_sortHeap","url":"/run/media/alineaz/E6FA3188FA3155D1/cpp/Data_structures_cpp/008_heap/129_sortHeap.cpp","tests":[{"id":1668201775504,"input":"6\n4 5 3 2 6 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/run/media/alineaz/E6FA3188FA3155D1/cpp/Data_structures_cpp/008_heap/129_sortHeap.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 139_sliding_window","url":"/home/alineaz/Documents/c++/apnacollege/sliding_window/139_sliding_window.cpp","tests":[{"id":1668539816707,"input":"8 3\n-2 10 1 3 2 -1 4 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/alineaz/Documents/c++/apnacollege/sliding_window/139_sliding_window.cpp","group":"local","local":true}

@@ -1,0 +1,11 @@
+Data			Topics
+6/9/22		Lecture 19, Lecture 10 character array Lecture 9 2d array
+7/9/22		Lecture 20, Before OOPS all need to practice more and more.
+8/9/22		Lecture 20, Practiced but countSort not working
+9/9/22		Lecture 17,lecture 16 Recursion
+11/9/22		Lecture 21 oops started, countsort done, Recursion problems
+12/9/22		Lecture 15,Seive again seive+ bitmanipulation
+13/9/22		Lecture 21,oops last video polymorphism
+15/9/22		Lecture 14, bti manipulation already done
+15/9/22		Lecture 13, string
+16/9/22		Lecture 11/12/13

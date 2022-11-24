@@ -1,0 +1,7 @@
+1. linked lists
+2. stacks
+3. queues
+4. hash tables
+5. trees
+6. heaps
+7. graphs

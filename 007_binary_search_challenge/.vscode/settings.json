@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "ranges": "cpp",
+        "forward_list": "cpp",
+        "*.tcc": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "string_view": "cpp",
+        "memory_resource": "cpp",
+        "scoped_allocator": "cpp",
+        "span": "cpp",
+        "stacktrace": "cpp",
+        "regex": "cpp"
+    }
+}

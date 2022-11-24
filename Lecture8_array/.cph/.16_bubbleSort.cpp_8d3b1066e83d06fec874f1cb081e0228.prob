@@ -1,0 +1,1 @@
+{"name":"Local: 16_bubbleSort","url":"/run/media/alineaz/E6FA3188FA3155D1/cpp/cpp_apna_college/Lecture8_array/16_bubbleSort.cpp","tests":[{"id":1663173315030,"input":"5\n5 4 3 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/run/media/alineaz/E6FA3188FA3155D1/cpp/cpp_apna_college/Lecture8_array/16_bubbleSort.cpp","group":"local","local":true}
