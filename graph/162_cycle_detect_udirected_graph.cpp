@@ -31,27 +31,31 @@ int main()
     for(int i=0;i<N;i++){
         make_set(i);
     }
+    //! krushkal algo
     int n,m;cin>>n>>m;
     vector<vector<int>> edges(n);
     for(int i=0;i<m;i++){
-        int x,y;cin>>x>>y;
-        edges.push_back({x,y});
+        int u,v,w;
+        cin>>u>>v>>w;
+        edges.push_back({w,u,v});
     }
-    bool flag = false;//* initially cycle false
+    sort(edges.begin(),edges.end());
+    int cost = 0;
     for(auto i: edges){
-        int u = i[0],v=i[1];
+        int w = i[0];
+        int u = i[1];
+        int v = i[2];
+
         int x = find_set(u);
         int y = find_set(v);
         if(x==y){
-            flag = true;
+            continue;
         }else{
+            cout<<u<<" "<<v<<endl;
+            cost+=w;
             union_sets(u,v);
         }
     }
-    if(flag){
-        cout<<"Cycle is present"<<endl;
-    }else{
-        cout<<"Cycle is not present"<<endl;
-    }
+    cout<<cost<<endl;
     return 0;
 }
