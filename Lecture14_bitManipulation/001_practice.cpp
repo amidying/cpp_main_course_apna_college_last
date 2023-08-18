@@ -869,3 +869,105 @@ int main()
 //     return 0;
 // }
 
+#include<iostream>
+
+int getBit(int n,int pos)
+{
+    return ((n & (1 <<pos)) !=0);
+}
+int setBit(int n,int pos)
+{
+    return (n | (1 << pos));
+}
+int clearBit(int n,int pos)
+{
+    int maks = ~(1 << pos);
+    return (n & maks);
+}
+int updateBit(int n,int pos,int val)
+{
+    int mask = ~(1 << pos);
+    n = n & mask;
+    return (n | (val <<pos));
+}
+
+int updateBit2(int n,int pos,int val)
+{
+    int mask = ~(val << pos);
+    n = n & mask;
+    return (n | (val <<pos));
+}
+
+// ispower2
+bool isPower2(int n)
+{
+    return (n && !(n & n-1));
+}
+
+int numOfOnes(int n)
+{
+    int count =0;
+    while(n)
+    {
+        n = n & (n-1);
+        count++;
+    }
+    return count;
+}
+void subSets(int arr[],int n)
+{
+    for(int i=0;i<(1 << n);i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            if(i &(1 <<j))
+            {
+                std::cout<<arr[j]<<" ";
+            }
+        }
+        std::cout<<std::endl;
+    }
+}
+int unique(int arr[],int n)
+{
+    int xorsum =0;
+    for(int i=0;i<n;i++)
+    {
+        xorsum ^= arr[i];
+    }
+    return xorsum;
+}
+
+void unique2(int arr[],int n)
+{
+    int xorsum =0;
+    for(int i=0;i<n;i++)
+    {
+        xorsum ^= arr[i];
+    }
+    int tempxor = xorsum;
+    int setbit =0;
+    int pos =0;
+    while(setbit !=1)
+    {
+        setbit = xorsum & 1;
+        pos++;
+        xorsum = xorsum >> 1;
+    }
+    int newxor =0;
+    for(int i=0;i<n;i++)
+    {
+        if(setBit(arr[i],pos-1))
+        {
+            newxor = newxor^arr[i];
+        }
+
+    }
+    std::cout<<std::endl;
+    std::cout<<(tempxor ^ newxor)<<std::endl;
+}
+
+int main(int argc,char * argv[])
+{
+    return 0;
+}
